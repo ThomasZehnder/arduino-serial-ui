@@ -1,0 +1,8 @@
+{
+    "sketch": "arduino-serial-ui.ino",
+    "port": "COM4",
+    "board": "arduino:avr:nano",
+    "configuration": "cpu=atmega328old",
+    "programmer": "AVRISP mkII",
+    "output": "./build"
+}
