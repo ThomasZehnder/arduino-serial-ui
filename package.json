@@ -1,0 +1,19 @@
+{
+  "name": "arduino-serial-ui",
+  "version": "1.0.0",
+  "description": "arduino serial ui",
+  "main": "index.js",
+  "scripts": {
+    "push-to-git": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ThomasZehnder/arduino-serial-ui.git"
+  },
+  "author": "Thomas Zehnder",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ThomasZehnder/arduino-serial-ui/issues"
+  },
+  "homepage": "https://github.com/ThomasZehnder/arduino-serial-ui#readme"
+}
