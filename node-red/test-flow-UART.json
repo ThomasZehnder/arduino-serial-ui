@@ -1,22 +1,36 @@
 [
     {
-        "id": "c92797a4.34748",
-        "type": "inject",
+        "id": "35a49757.cbb998",
+        "type": "serial in",
         "z": "21ccafac.53e98",
-        "name": "Display Mode",
-        "topic": "",
-        "payload": "&@Display Mode\\does not show\\key messages !!!",
-        "payloadType": "str",
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "x": 157,
-        "y": 312,
+        "name": "",
+        "serial": "eff0258f.299408",
+        "x": 139.32989501953125,
+        "y": 442.81597900390625,
         "wires": [
             [
-                "fa35d3d6.38e8c"
+                "3e1a3d77.f55902"
             ]
         ]
+    },
+    {
+        "id": "eff0258f.299408",
+        "type": "serial-port",
+        "z": "",
+        "serialport": "COM4",
+        "serialbaud": "115200",
+        "databits": "8",
+        "parity": "none",
+        "stopbits": "1",
+        "waitfor": "",
+        "dtr": "none",
+        "rts": "none",
+        "cts": "none",
+        "dsr": "none",
+        "newline": "\\n",
+        "bin": "false",
+        "out": "char",
+        "addchar": "",
+        "responsetimeout": "10000"
     }
 ]

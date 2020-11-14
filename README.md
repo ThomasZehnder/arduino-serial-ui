@@ -1,7 +1,7 @@
 # arduino-serial-ui
 Arduino UI with OLED display, 4 led and two keys
 
-<img src="images/arduino-serial-ui.jpg" alt="drawing" width="400"/>
+<img src="images/arduino-serial-ui.jpg" alt="arduino-ui-test-board" width="400"/>
 
 Arduino Nano V3.0 with FTDI UART works :-) for B&R PLC
 
@@ -84,9 +84,15 @@ Following strings are send:
     SDA = A4
     SCL = A5
 
-  command 
 
 # TIPS for beginners
+## Node-RED
+Simple to test the Arduino UI is to use Node-RED.  
+
+<img src="images/arduino-ui-node-red-sample.png" alt="node-red-sample" width="400"/>
+
+Import following JSON : [test-flow-UART.json](/node-red/test-flow-UART.json)
+
 ## work with GIT
     push --> commit to GIT   
     pull --> get from GIT
