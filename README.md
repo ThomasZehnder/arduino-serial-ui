@@ -93,8 +93,8 @@ Simple to test the Arduino UI is to use [Node-RED](https://nodered.org/docs/gett
 
 Import following JSON : [test-flow-UART.json](/node-red/test-flow-UART.json)
 
-##update clone
-If you clone this repo, to use nodered, you have to install node-red globally and then execute npm install in main folder and within node-red.
+## update clone
+If you clone this repo, to use node-red, you have to install node-red globally and then execute npm install in main folder and within node-red.
 
 # TIPS for beginners
 ## work with GIT
