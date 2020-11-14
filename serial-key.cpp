@@ -21,23 +21,31 @@ bool keyPressed(int nr)
   return (digitalRead(pinKey[nr]) == KEYTRUELEVEL);
 }
 
-void sendJSON(int nr, char* value)
+void sendJSON(int nr, char* value, bool serialToOledOn)
 {
   char line[30];
   sprintf(line, "{\"key%i\":%s}", nr, value) ;
-  serialPlusOled(line);
+  if (serialToOledOn) 
+  {
+    //send only to serial out
+    Serial.println(line);
+  }
+  else 
+  {
+    serialPlusOled(line);
+  }
 }
 
-void keyEdgeDetect (void)
+void keyEdgeDetect (bool serialToOledOn)
 {
   int i;
   for (i = 0; i < 2; i++)
   {
     valKey[i] = digitalRead(pinKey[i]);
     if ((valKey[i] == KEYTRUELEVEL) && (valKey_old[i] == !KEYTRUELEVEL)) {
-      sendJSON(i,"true");
+      sendJSON(i,"true", serialToOledOn);
     } else if ((valKey[i] == !KEYTRUELEVEL) && (valKey_old[i] == KEYTRUELEVEL)) {
-      sendJSON(i,"false");
+      sendJSON(i,"false", serialToOledOn);
     }
     valKey_old[i] = valKey[i];
   }

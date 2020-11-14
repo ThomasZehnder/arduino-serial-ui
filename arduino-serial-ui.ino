@@ -41,7 +41,7 @@ char c = 0;
 char pinArray[4];
 char selectetPin = 0;
 
-bool serielToOledOn = false;
+bool serialToOledOn = false;
 
 bool valKey[2];
 bool valKey_old[2];
@@ -120,7 +120,7 @@ void setup()
 
 void loop()
 {
-  keyEdgeDetect();
+  keyEdgeDetect(serialToOledOn);
 
   // if there's any serial available, read it:
   while (Serial.available() > 0)
@@ -130,14 +130,14 @@ void loop()
 
     if (c == '^')
     {
-      serielToOledOn = false;
+      serialToOledOn = false;
       Serial.println("@ send off to OLED");
       oled.setFont(System5x7);
     }
 
     else if (c == '@')
     {
-      serielToOledOn = true;
+      serialToOledOn = true;
       Serial.println("@ send character to OLED without interpretating until \\");
     }
 
@@ -146,7 +146,7 @@ void loop()
       // if char is consumed return Value is true
     }
 
-    else if (serielToOledOn)
+    else if (serialToOledOn)
     {
       oled.print(c);
     }

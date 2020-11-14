@@ -10,6 +10,6 @@ void keyInit(void);
 
 bool keyPressed(int nr);
 
-void keyEdgeDetect (void);
+void keyEdgeDetect (bool serialToOledOn);
 
 #endif //serial_key_h
