@@ -88,8 +88,8 @@ Following strings are send:
 
 # TIPS for beginners
 ## work with GIT
-push --> commit to GIT, / 
-pull --> get from GIT
+    push --> commit to GIT   
+    pull --> get from GIT
 
 use commandos in VScode :-)
 
