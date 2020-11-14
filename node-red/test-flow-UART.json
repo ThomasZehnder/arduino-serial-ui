@@ -1,10 +1,13 @@
 [
     {
-        "id": "21ccafac.53e98",
-        "type": "tab",
-        "label": "Flow 1",
-        "disabled": false,
-        "info": ""
+        "id": "fa35d3d6.38e8c",
+        "type": "serial out",
+        "z": "21ccafac.53e98",
+        "name": "",
+        "serial": "eff0258f.299408",
+        "x": 649.7847290039062,
+        "y": 252.1319580078125,
+        "wires": []
     },
     {
         "id": "eff0258f.299408",
@@ -25,124 +28,5 @@
         "out": "char",
         "addchar": "",
         "responsetimeout": "10000"
-    },
-    {
-        "id": "fa35d3d6.38e8c",
-        "type": "serial out",
-        "z": "21ccafac.53e98",
-        "name": "",
-        "serial": "eff0258f.299408",
-        "x": 709.7847442626953,
-        "y": 195.1319580078125,
-        "wires": []
-    },
-    {
-        "id": "c3de91ce.5a19c",
-        "type": "inject",
-        "z": "21ccafac.53e98",
-        "name": "",
-        "topic": "",
-        "payload": "0p1p2p3p2p1pf&@#Helo UI .-)\\|line1\\line2\\^",
-        "payloadType": "str",
-        "repeat": "10",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "x": 221.3298797607422,
-        "y": 182.96180725097656,
-        "wires": [
-            [
-                "fa35d3d6.38e8c"
-            ]
-        ]
-    },
-    {
-        "id": "2e03263d.5ecb2a",
-        "type": "inject",
-        "z": "21ccafac.53e98",
-        "name": "",
-        "topic": "",
-        "payload": "0xdodx",
-        "payloadType": "str",
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "x": 171.3298797607422,
-        "y": 264.9583435058594,
-        "wires": [
-            [
-                "fa35d3d6.38e8c"
-            ]
-        ]
-    },
-    {
-        "id": "35a49757.cbb998",
-        "type": "serial in",
-        "z": "21ccafac.53e98",
-        "name": "",
-        "serial": "eff0258f.299408",
-        "x": 213.32989501953125,
-        "y": 442.81597900390625,
-        "wires": [
-            [
-                "3e1a3d77.f55902"
-            ]
-        ]
-    },
-    {
-        "id": "3e1a3d77.f55902",
-        "type": "debug",
-        "z": "21ccafac.53e98",
-        "name": "",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": true,
-        "complete": "payload",
-        "targetType": "msg",
-        "x": 656.3299102783203,
-        "y": 447.90972900390625,
-        "wires": []
-    },
-    {
-        "id": "885c2b74.bd9e9",
-        "type": "inject",
-        "z": "21ccafac.53e98",
-        "name": "",
-        "topic": "",
-        "payload": "&@#My IP\\|192.168.1.200^",
-        "payloadType": "str",
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "x": 155,
-        "y": 344,
-        "wires": [
-            [
-                "fa35d3d6.38e8c"
-            ]
-        ]
-    },
-    {
-        "id": "c92797a4.34748",
-        "type": "inject",
-        "z": "21ccafac.53e98",
-        "name": "NewLine",
-        "topic": "",
-        "payload": "@\\^",
-        "payloadType": "str",
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "x": 382,
-        "y": 363,
-        "wires": [
-            [
-                "fa35d3d6.38e8c"
-            ]
-        ]
     }
 ]
