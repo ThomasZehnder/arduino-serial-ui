@@ -36,7 +36,7 @@ void serialPlusOledDelayed(char *s)
 
 void displayShowCommand(char c)
 {
-  if (c != '\n') //avoid unnecesary line for LF
+  if (c != '\n') //avoid unnecessary line for LF
   {
     oled.print("Command: ");
     oled.print((int)c);

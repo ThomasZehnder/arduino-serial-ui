@@ -93,4 +93,12 @@
                 "random": "cpp"
         },
         "C_Cpp.intelliSenseEngineFallback": "Enabled",
+        "spellright.language": [
+                "en"
+        ],
+        "spellright.documentTypes": [
+                "markdown",
+                "latex",
+                "plaintext"
+        ],
 }

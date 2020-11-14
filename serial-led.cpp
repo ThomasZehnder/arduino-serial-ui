@@ -10,18 +10,11 @@ void ledInit(void)
   {
     pinMode(pinArray[i], OUTPUT);
     digitalWrite(pinArray[i], LOW); // turn the LED off by making the voltage LOW
-  }
 
-  
-  // initial demo flashing
-  ledPulse();
-  selectetPin = 1;
-  ledPulse();
-  selectetPin = 2;
-  ledPulse();
-  selectetPin = 3;
-  ledPulse();
-  selectetPin = 0;
+    // initial demo flashing
+    ledPulse();
+    selectetPin = (1+i)%4;
+  }
 }
 
 void ledPulse(void)
@@ -32,7 +25,7 @@ void ledPulse(void)
   delay(100);
 }
 void ledFlash(void)
-{ 
+{
   int i;
   for (i = 1; i < 10; i++)
   {
@@ -40,68 +33,67 @@ void ledFlash(void)
   }
 }
 
-
 void ledCommand(char c)
 {
-      if (c == 'f')
-      {
-        ledFlash();
-        serialPlusOled("f = flash sequence 10 times fast");
-      }
-      else if (c == 'o')
-      {
-        digitalWrite(pinArray[selectetPin], HIGH); // turn the LED on (HIGH is the voltage level)
-        serialPlusOled("o = off");
-      }
-      else if (c == 'x')
-      {
-        digitalWrite(pinArray[selectetPin], LOW); // turn the LED on (HIGH is the voltage level)
-        serialPlusOled("x = on");
-      }
-      else if (c == 'p')
-      {
-        ledPulse();
-        serialPlusOled("p = 100ms puls");
-      }
-      else if (c == 'd')
-      {
-        delay(100);
-        serialPlusOled("d = 100ms delay");
-      }
-      else if (c == '0')
-      {
-        serialPlusOled("select led 0");
-        selectetPin = 0;
-      }
-      else if (c == '1')
-      {
-        serialPlusOled("select led 1");
-        selectetPin = 1;
-      }
-      else if (c == '2')
-      {
-        serialPlusOled("select led 2");
-        selectetPin = 2;
-      }
-      else if (c == '3')
-      {
-        serialPlusOled("select led 3");
-        selectetPin = 3;
-      }
-      else if (c == '\r')
-      {
-        //Serial.println(".r.\r");
-      }
-      else if (c == '\n')
-      {
-        ///Serial.println(".n.\n");
-      }
-      else
-      {
-        Serial.print("Command: ");
-        Serial.print(c);
-        Serial.print(",");
-        Serial.print(c, HEX);
-        Serial.println(" not implemented");
-      }
+  if (c == 'f')
+  {
+    ledFlash();
+    serialPlusOled("f = flash sequence 10 times fast");
+  }
+  else if (c == 'o')
+  {
+    digitalWrite(pinArray[selectetPin], HIGH); // turn the LED on (HIGH is the voltage level)
+    serialPlusOled("o = off");
+  }
+  else if (c == 'x')
+  {
+    digitalWrite(pinArray[selectetPin], LOW); // turn the LED on (HIGH is the voltage level)
+    serialPlusOled("x = on");
+  }
+  else if (c == 'p')
+  {
+    ledPulse();
+    serialPlusOled("p = 100ms puls");
+  }
+  else if (c == 'd')
+  {
+    delay(100);
+    serialPlusOled("d = 100ms delay");
+  }
+  else if (c == '0')
+  {
+    serialPlusOled("select led 0");
+    selectetPin = 0;
+  }
+  else if (c == '1')
+  {
+    serialPlusOled("select led 1");
+    selectetPin = 1;
+  }
+  else if (c == '2')
+  {
+    serialPlusOled("select led 2");
+    selectetPin = 2;
+  }
+  else if (c == '3')
+  {
+    serialPlusOled("select led 3");
+    selectetPin = 3;
+  }
+  else if (c == '\r')
+  {
+    //Serial.println(".r.\r");
+  }
+  else if (c == '\n')
+  {
+    ///Serial.println(".n.\n");
+  }
+  else
+  {
+    Serial.print("Command: ");
+    Serial.print(c);
+    Serial.print(",");
+    Serial.print(c, HEX);
+    Serial.println(" not implemented");
+  }
 }
