@@ -4,6 +4,7 @@
   "description": "arduino serial ui",
   "main": "index.js",
   "scripts": {
+    "start-node-red": "node node-red/start-node-red",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -15,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/ThomasZehnder/arduino-serial-ui/issues"
   },
-  "homepage": "https://github.com/ThomasZehnder/arduino-serial-ui#readme"
+  "homepage": "https://github.com/ThomasZehnder/arduino-serial-ui#readme",
+  "devDependencies": {
+    "shelljs": "^0.8.4"
+  }
 }

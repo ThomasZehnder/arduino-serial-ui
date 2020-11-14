@@ -87,7 +87,7 @@ Following strings are send:
 
 # TIPS for beginners
 ## Node-RED
-Simple to test the Arduino UI is to use Node-RED.  
+Simple to test the Arduino UI is to use [Node-RED](https://nodered.org/docs/getting-started/).  
 
 <img src="images/arduino-ui-node-red-sample.png" alt="node-red-sample" width="400"/>
 
