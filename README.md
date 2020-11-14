@@ -1,8 +1,7 @@
 # arduino-serial-ui
 arduino UI with OLED display, 4 leds and two keys
 
-![Intro image](images/arduino-serial-ui.jpg)
-<img src="images/arduino-serial-ui.jpg" alt="drawing" width="200"/>
+<img src="images/arduino-serial-ui.jpg" alt="drawing" width="400"/>
 
 Arduino Nano V3.0 with FTDI UART works :-) for B&R PLC
 
