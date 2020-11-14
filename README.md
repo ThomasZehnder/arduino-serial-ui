@@ -1,6 +1,7 @@
 # arduino-serial-ui
 arduino UI with OLED display, leds and two keys
 
+![Intro image](images/arduino-serial-ui.jpg)
 
 Arduino Nano works :-) for B&R PLC
 
