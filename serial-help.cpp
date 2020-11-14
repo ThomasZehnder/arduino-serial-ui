@@ -1,6 +1,6 @@
 #include "Arduino.h"
-#include "serial-display.h"
-#include "serial-keyhandling.h"
+#include "serial-display.hpp"
+#include "serial-key.hpp"
 
 void help()
 {

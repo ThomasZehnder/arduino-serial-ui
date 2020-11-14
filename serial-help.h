@@ -1,2 +1,0 @@
-
-void help(void);

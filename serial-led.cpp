@@ -1,6 +1,6 @@
 #include "Arduino.h"
-#include "serial-led.h"
-#include "serial-display.h"
+#include "serial-led.hpp"
+#include "serial-display.hpp"
 
 void ledInit(void)
 {

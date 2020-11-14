@@ -26,13 +26,11 @@
 
 */
 
-#include "serial-help.h"
-#include "serial-key.h"
-#include "serial-display.h"
-#include "serial-led.h"
+#include "serial-help.hpp"
+#include "serial-key.hpp"
+#include "serial-display.hpp"
+#include "serial-led.hpp"
 
-
-SSD1306AsciiWire oled;
 
 char c = 0;
 
@@ -54,9 +52,9 @@ void setup()
   // initialize serial: baud rate fix to 115200, B&R PLC works with USB support and FRM- Library, othed baud rates are not supportde.
 
   Serial.begin(115200);
-  Serial.println("###############################################################");
-  Serial.println(" Serial Interface to Leds, Oled Display and keys (115200 Baud )");
-  Serial.println("###############################################################");
+  Serial.println("################################################################");
+  Serial.println(" Serial Interface to Leds, Oled Display and Keys (115200 Baud )");
+  Serial.println("################################################################");
   Serial.print(__DATE__);
   Serial.print(" / ");
   Serial.println(__TIME__);

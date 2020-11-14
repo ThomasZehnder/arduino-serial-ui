@@ -12,13 +12,12 @@
                 "C:\\Arduino\\hardware\\tools\\**",
                 "C:\\Arduino\\libraries\\**",
                 "C:\\Users\\Thomas\\AppData\\Local\\Arduino15\\packages\\esp8266\\tools\\**",
-                "C:\\Users\\Thomas\\AppData\\Local\\Arduino15\\packages\\esp8266\\hardware\\esp8266\\2.5.1\\**",
                 "C:\\Users\\Thomas\\AppData\\Local\\Arduino15\\packages\\esp8266\\hardware\\esp8266\\2.7.4\\**"
             ],
             "forcedInclude": [
                 "C:\\Arduino\\hardware\\arduino\\avr\\cores\\arduino\\Arduino.h"
             ],
-            "intelliSenseMode": "clang-x64",
+            "intelliSenseMode": "msvc-x64",
             "cStandard": "c11",
             "cppStandard": "c++17",
             "compilerPath": "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.20.27508/bin/Hostx64/x64/cl.exe",
@@ -29,7 +28,7 @@
                     "C:\\Users\\Thomas\\Documents\\Arduino\\libraries",
                     "C:\\Arduino\\libraries\\**",
                     "C:\\Users\\Thomas\\AppData\\Local\\Arduino15\\packages\\esp8266\\tools\\**",
-                    "C:\\Users\\Thomas\\AppData\\Local\\Arduino15\\packages\\esp8266\\hardware\\esp8266\\2.5.1\\**"
+                    "C:\\Users\\Thomas\\AppData\\Local\\Arduino15\\packages\\esp8266\\hardware\\esp8266\\2.7.4\\**"
                 ]
             }
         }

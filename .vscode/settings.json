@@ -92,4 +92,5 @@
                 "string": "cpp",
                 "random": "cpp"
         },
+        "C_Cpp.intelliSenseEngineFallback": "Enabled",
 }

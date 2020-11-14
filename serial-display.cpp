@@ -1,6 +1,7 @@
 #include "Arduino.h"
-#include "serial-display.h"
+#include "serial-display.hpp"
 
+SSD1306AsciiWire oled;
 
 void displaySetup(void) {
   Wire.begin();
@@ -10,7 +11,7 @@ void displaySetup(void) {
 
   oled.setFont(fixed_bold10x15);
   oled.clear();
-  oled.println("Seriell Tool");
+  oled.println("Serial UI");
 
   oled.setFont(System5x7);
   oled.print("Build: ");

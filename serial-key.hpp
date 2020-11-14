@@ -1,5 +1,5 @@
-#ifndef serial-keyhandling_h
-#define serial-keyhandling_h
+#ifndef serial_key_h
+#define serial_key_h
 
 extern bool valKey[2];
 extern bool valKey_old[2];
@@ -12,4 +12,4 @@ bool keyPressed(int nr);
 
 void keyEdgeDetect (void);
 
-#endif //serial-keyhandling_h
+#endif //serial_key_h

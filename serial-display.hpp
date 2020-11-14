@@ -1,5 +1,5 @@
-#ifndef serial-display_h
-#define serial-display_h
+#ifndef serial_display_h
+#define serial_display_h
 
 #include <Wire.h>
 #include "SSD1306Ascii.h"
@@ -19,4 +19,4 @@ void displayShowCommand(char  c);
 
 bool displaySetting(char  c);
 
-#endif //serial-display_h
+#endif //serial_display_h

@@ -1,6 +1,6 @@
 #include "Arduino.h"
-#include "serial-keyhandling.h"
-#include "serial-display.h"
+#include "serial-key.hpp"
+#include "serial-display.hpp"
 
 
 #define KEYTRUELEVEL false

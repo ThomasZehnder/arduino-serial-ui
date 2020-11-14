@@ -4,5 +4,9 @@
     "board": "arduino:avr:nano",
     "configuration": "cpu=atmega328old",
     "programmer": "AVRISP mkII",
-    "output": "./build"
+    "output": "./build",
+    "buildPreferences": [
+        ["build.extra_flags", "-DDEBUG=false"],
+        ["compiler.cpp.extra_flags", "-DDEBUG=false"]
+    ]
 }
