@@ -6,7 +6,13 @@
     "programmer": "AVRISP mkII",
     "output": "./build",
     "buildPreferences": [
-        ["build.extra_flags", "-DDEBUG=false"],
-        ["compiler.cpp.extra_flags", "-DDEBUG=false"]
+        [
+            "build.extra_flags",
+            "-DDEBUG=false"
+        ],
+        [
+            "compiler.cpp.extra_flags",
+            "-DDEBUG=false"
+        ]
     ]
 }

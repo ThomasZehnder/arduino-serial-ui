@@ -25,23 +25,25 @@ For Linux or Windows all variants are working without any problems.
 4 led with commands. A sequence with multiple command is allowed. e.g 2p3f will show a pulse on led 2 and lets flash le3 3 10 times. 
 
     0,1,2,3 = select led, command is modal
-    o = off
-    x = on
+    x = off
+    o = on
     p = 100ms puls
     f = flash sequence 10 times fast
+    h = this help
 
 ## Display Commands
 To access the display to send texts to the display start with '@', this will forward all characters to the display.  
 With '#' and '|' you can change between small an big font.  
 '&' will clear the display.  
-To switch back to control the led use '\'.   
+To switch back to control the led use '^'.   
 
-    \ = switch to led command
+    ^ = switch to led command
     @ = switch to oled output
     # = big font
     | = small font
     & = clear display
-    h = this help
+    \ = new line
+    
 
 ## Key results
 If the keys are pressed and released events are visible on the display and send to UART.

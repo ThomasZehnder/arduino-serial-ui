@@ -57,10 +57,14 @@ bool displaySetting(char  c)
     oled.setFont(System5x7);
     return true;
   }
-
   else if (c == '&')
   {
     oled.clear();
+    return true;
+  }  
+  else if (c == '\\')
+  {
+    oled.println("");
     return true;
   }
   return false;

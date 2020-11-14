@@ -128,7 +128,7 @@ void loop()
     // look wait on input
     c = Serial.read();
 
-    if (c == '\\')
+    if (c == '^')
     {
       serielToOledOn = false;
       Serial.println("@ send off to OLED");
