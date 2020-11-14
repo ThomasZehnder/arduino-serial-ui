@@ -85,14 +85,18 @@ Following strings are send:
     SCL = A5
 
 
-# TIPS for beginners
-## Node-RED
+
+# Node-RED
 Simple to test the Arduino UI is to use [Node-RED](https://nodered.org/docs/getting-started/).  
 
 <img src="images/arduino-ui-node-red-sample.png" alt="node-red-sample" width="400"/>
 
 Import following JSON : [test-flow-UART.json](/node-red/test-flow-UART.json)
 
+##update clone
+If you clone this repo, to use nodered, you have to install node-red globally and then execute npm install in main folder and within node-red.
+
+# TIPS for beginners
 ## work with GIT
     push --> commit to GIT   
     pull --> get from GIT
