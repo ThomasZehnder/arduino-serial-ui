@@ -7,6 +7,7 @@ Arduino Nano V3.0 with FTDI UART works :-) for B&R PLC
 
 ## Connection to B&R PLC's USB - serial access
 FTDI is working fine for B&R USB connection
+
 CP210x is NOT working for B&R PLC (tested with ESP Board and serial small USB Serial 5V adapter)  
 CH340 is NOT working for B&R PLC (tested with ESPDuino)  
 EPS8266 CP2102  --> Does not work for B&R PLC's  
